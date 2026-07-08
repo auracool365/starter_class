@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:starter_class/profile_screen.dart';
+import 'package:starter_class/stateful/counter_app.dart';
 
 void main() {
-  runApp(ProfileScreen());
+  runApp(MaterialApp(home: CounterApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {
-                debugPrint("Search button");
+                debugPrint("Search button clicked");
               },
               icon: Icon(Icons.search, size: 30),
             ),
