@@ -38,7 +38,7 @@ class PlayerProfileCard extends StatelessWidget {
             const SizedBox(height: 6),
             PlayerDetail(label: 'Occupation', value: occupation),
             const SizedBox(height: 6),
-            PlayerDetail(label: "Club", value: "Al Nassr"),
+            const PlayerDetail(label: "Club", value: "Al Nassr"),
           ],
         ),
       ],

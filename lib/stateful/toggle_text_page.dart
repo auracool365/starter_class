@@ -33,7 +33,7 @@ class _ToggleTextPageState extends State<ToggleTextPage> {
                     _isTextChange = !_isTextChange;
                   });
                 },
-                child: Text(
+                child: const Text(
                   "Switch Text",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),

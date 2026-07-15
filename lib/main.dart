@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:starter_class/stateful/counter_app.dart';
+import 'package:starter_class/layout_views/lists/list_view_builder.dart';
 
 void main() {
-  runApp(MaterialApp(home: CounterApp()));
+  runApp(MaterialApp(home: ListViewBuilder()));
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             "Starter Class",
             style: TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
           ),
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
               onPressed: () {
                 debugPrint("Search button clicked");
               },
-              icon: Icon(Icons.search, size: 30),
+              icon: const Icon(Icons.search, size: 30),
             ),
           ],
           centerTitle: false,
@@ -30,10 +30,10 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
           toolbarHeight: 60,
         ),
-        body: Center(
+        body: const Center(
           child: Column(
-            crossAxisAlignment: .center,
-            mainAxisAlignment: .center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "Hello World",
@@ -44,10 +44,10 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Row(
-                mainAxisAlignment: .center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(Icons.people, size: 40, color: Colors.green),
-                  const SizedBox(width: 8),
+                  SizedBox(width: 8),
                   Text(
                     "Hello Everyone",
                     style: TextStyle(

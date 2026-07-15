@@ -25,7 +25,7 @@ class _LikePageState extends State<LikePage> {
         appBar: AppBar(
           title: Text(
             _isLiked ? "Post has been liked" : "Post not liked",
-            style: TextStyle(fontWeight: FontWeight.w600),
+            style: const TextStyle(fontWeight: FontWeight.w600),
           ),
           backgroundColor: Colors.blueAccent,
           foregroundColor: Colors.white,
