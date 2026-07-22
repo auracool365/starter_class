@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: FormValidationApp()));
+  runApp(const MaterialApp(home: FormValidationApp()));
 }
 
 class FormValidationApp extends StatefulWidget {
