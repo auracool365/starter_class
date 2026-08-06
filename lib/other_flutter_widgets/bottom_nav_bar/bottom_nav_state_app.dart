@@ -29,6 +29,10 @@ class _BottomNavStateAppState extends State<BottomNavStateApp> {
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
+      // Does not remember state of each page when switching between tabs
+      // body: _pages[_selectedIndex],
+
+      // Remembers state of each page when switching between tabs
       body: IndexedStack(
         index: _selectedIndex,
         children: _pages,
