@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: ButtonApp()));
+  runApp(const MaterialApp(home: ButtonApp()));
 }
 
 class ButtonApp extends StatefulWidget {
