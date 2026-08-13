@@ -23,7 +23,9 @@ class _BottomNavStateAppState extends State<BottomNavStateApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Nav Bar State Loss App',
+      appBar: AppBar(
+        title: const Text(
+          'Nav Bar State Loss App',
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.blue,
@@ -33,10 +35,7 @@ class _BottomNavStateAppState extends State<BottomNavStateApp> {
       // body: _pages[_selectedIndex],
 
       // Remembers state of each page when switching between tabs
-      body: IndexedStack(
-        index: _selectedIndex,
-        children: _pages,
-      ),
+      body: IndexedStack(index: _selectedIndex, children: _pages),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: (index) => setState(() => _selectedIndex = index),
@@ -49,7 +48,6 @@ class _BottomNavStateAppState extends State<BottomNavStateApp> {
     );
   }
 }
-
 
 class _HomePage extends StatefulWidget {
   const _HomePage();
